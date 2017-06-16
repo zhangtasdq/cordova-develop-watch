@@ -1,0 +1,23 @@
+{
+  "name": "cordova-develop-watcher",
+  "version": "0.0.1",
+  "description": "reload cordova index page when src change",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cordova",
+    "reload"
+  ],
+  "bin": {
+    "cordova-watcher": "./bin/watcher-bin.js"
+  },
+  "author": "zhang",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "express": "^4.15.3",
+    "express-ws": "^3.0.0"
+  }
+}
