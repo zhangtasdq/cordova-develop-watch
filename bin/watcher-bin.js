@@ -8,7 +8,13 @@ program
   .option('-p, --port [port]', 'Server Port')
   .option('-d, --dir <dir>', 'watch dir')
   .option('-t, --task [task]', 'run task')
+  .option('-i, --interval [interval]', 'run task delay time')
   .parse(process.argv);
 
 
-watcher.start({port: program.port, dir: program.dir, task: program.task});
+watcher.start({
+    port: program.port,
+    dir: program.dir,
+    task: program.task,
+    taskDelayTime: program.interval
+});
